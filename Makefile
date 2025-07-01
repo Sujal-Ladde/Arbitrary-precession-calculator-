@@ -14,7 +14,7 @@ SRC_DIR = src
 MAIN_DIR = main
 
 # Executable name
-EXECUTABLE = a.out
+EXECUTABLE = arbitrary_precision_calculator
 
 # Output directory for object files
 BIN_DIR = bin

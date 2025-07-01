@@ -55,7 +55,7 @@ Subtraction (subtraction)
 Subtraction also starts from the least significant digit. The logic assumes the first operand is greater than or equal to the second.
 
     Initialize borrow to 0.
-
+  
     Traverse both lists from tail to head.
 
     Calculate diff = (digit1 - borrow) - digit2.
@@ -106,43 +106,6 @@ Integer division is implemented using a long-division approach.
 
     Remove any leading zeros from the final quotient.
 
-Flowcharts
-Main Program Flow
-
-graph TD
-    A[Start] --> B{argc < 4?};
-    B -- Yes --> C[Print Error: Too few arguments] --> X[End];
-    B -- No --> D[Parse Operands and Operator];
-    D --> E{Operator is '/' and op2 is '0'?};
-    E -- Yes --> F[Print Error: Division by zero] --> X;
-    E -- No --> G[Create DLLs for op1 and op2];
-    G --> H{What is the operator?};
-    H -- '+' --> I[Call Addition Logic];
-    H -- '-' --> J[Call Subtraction Logic];
-    H -- 'x' --> K[Call Multiplication Logic];
-    H -- '/' --> L[Call Division Logic];
-    I --> M[Store Result];
-    J --> M;
-    K --> M;
-    L --> M;
-    M --> N[Print Result];
-    N --> O[Destroy all DLLs];
-    O --> X;
-
-Addition/Subtraction Logic Flow
-
-graph TD
-    A[Start Operation] --> B{Signs are same?};
-    B -- Yes --> C{Op is '+'?};
-    C -- Yes --> D[Perform Addition];
-    C -- No --> E[Perform Subtraction Logic];
-    B -- No --> F{Op is '+'?};
-    F -- Yes --> G[Perform Subtraction Logic];
-    F -- No --> H[Perform Addition];
-    D --> Z[End Operation];
-    E --> Z;
-    G --> Z;
-    H --> Z;
 
 File Descriptions
 
