@@ -129,3 +129,6 @@ Division
 ./arbitrary_precision_calculator 11111111111111111111 / 123456789
 Result: 900000018
 ```
+
+Author
+Sujal Ladde • laddesujal273@gmail.com 
