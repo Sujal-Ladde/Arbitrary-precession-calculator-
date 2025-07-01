@@ -28,7 +28,7 @@ typedef struct DLL {
     struct DLL *previous_node;
     struct DLL *next_node;
 } DLL;
-
+```
 Algorithms
 
 The arithmetic operations are implemented to mimic the manual, grade-school methods of calculation, but adapted for the doubly linked list data structure.
